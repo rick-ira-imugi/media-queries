@@ -47,3 +47,7 @@ section{
     padding: 1em;
     width: 100%;
 }
+#social-media-links{
+    display: flex;
+    justify-content: flex-end;
+}
