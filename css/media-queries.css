@@ -47,7 +47,14 @@ section{
     padding: 1em;
     width: 100%;
 }
-#social-media-links{
+footer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+footer>p{
+    margin-right: auto;
+    display: inline-block;
+
 }
