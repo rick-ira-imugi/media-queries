@@ -1,60 +1,88 @@
-.alert-info {
-    background-color: #c2ffff;
-    margin: 1em;
-    width: 80%;
-    text-align: center;
-    padding: 1em;
-}
-h1 {
-    text-align: center;
-}
-nav{
+body{
+    width: 100dvw;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    flex-flow: column;
+    align-items: center;
+}
+.alert-info{
+    display: inline-block;
+    background-color: #c2ffff;
+    width: 90dvw;
+    text-align: center;
+    padding: 1em 0;
+}
+h1{
 }
 .nav-links{
-    list-style: none;
     margin: 0;
     padding: 0;
 }
 ul>li{
-    display: inline-block;
+    list-style: none;
     background-color: #c1c1c1;
-       width: 90%;
-       padding: 1em;
-    text-align: center;
     margin: .5em 0;
-   }
-.header-img{
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    width: 90dvw;
+    padding: 1em 0;
 }
-img{
-    width: 339px;
-    height: 224px;
-    padding: .5em;
-}
-main{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-
+div>img {
+    width: 90dvw;
 }
 section{
-    padding: 1em;
-    width: 100%;
+    width: 90dvw;
 }
-footer {
+footer{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    width: 90dvw;
+    margin-top: 10em;
 }
-
 footer>p{
-    margin-right: auto;
     display: inline-block;
-
+    flex-grow: 1;
 }
+i{
+    padding: 0 0.25em;
+}
+@media screen and (min-width: 768px){
+    body{
+        align-items: center;
+    }
+    .hidden-on-desktop{
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+    header{
+        width: 90dvw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        display: flex;
+        flex-flow: row;
+    }
+    ul>li{
+        background-color: white;
+        width: fit-content;
+        margin: .5em;
+    }
+    main{
+        width: 90dvw;
+        display: flex;
+    }
+    section.main{
+        margin: 0;
+        padding-right: 2em;
+    }
+    section.sub-section{
+        margin: 0;
+        width: 40%;
+    }
+    footer{
+        margin-top: 20em;
+    }
+}
+
